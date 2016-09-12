@@ -1,0 +1,13 @@
+<div class="btn-group" dropdown>
+  <button type="button" class="btn btn-default btn-with-icon" dropdownToggle addToggleClass="true">
+    <i class="{{buttonIconClass}}"></i>
+    {{buttonText}}
+  </button>
+  <ul class="dropdown-menu" dropdownMenu>
+    <li *ngFor="let item of items"
+        class="dropdown-item"
+        (click)="clickedDropdownItem(item)">
+      <span>{{item.name}}</span>
+    </li>
+  </ul>
+</div>

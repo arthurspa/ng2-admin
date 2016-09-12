@@ -15,6 +15,28 @@ export const PAGES_MENU = [
         }
       },
       {
+        path: 'shared',
+        data: {
+          menu: {
+            title: 'Shared Elements',
+            icon: 'ion-compose',
+            selected: false,
+            expanded: false,
+            order: 2,
+          }
+        },
+        children: [
+          {
+            path: 'general',
+            data: {
+              menu: {
+                title: 'General',
+              }
+            }
+          }
+        ]
+      },
+      {
         path: 'editors',
         data: {
           menu: {
